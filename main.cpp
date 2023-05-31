@@ -8,15 +8,15 @@ class NFA {
     std::vector<std::tuple<int, char, int>> transitions;
 
 public:
-    NFA (std::vector<int> finalStates, std::vector<char> sigma, std::vector<int> states,
+    NFA(std::vector<int> finalStates, std::vector<char> sigma, std::vector<int> states,
     std::vector<std::tuple<int, char, int>> transitions) : finalStates(finalStates),
     sigma(sigma), states(states), transitions(transitions) {
         sigma.push_back('$');
     }
 
-    ~NFA () = default;
+    ~NFA() = default;
 
-    std::vector<int> exists (const int &state, const char &sigma) {
+    std::vector<int> exists(const int &state, const char &sigma) {
         std::vector<int> nextStates;
         for (auto transition : transitions)
             if (std::get<0>(transition) == state && std::get<1>(transition) == sigma)
@@ -25,7 +25,7 @@ public:
         return nextStates;
     }
 
-    void accepts (const std::string &input) {
+    void accepts(const std::string &input) {
         currentStates = {0};
 
         for (char symbol : input) {
