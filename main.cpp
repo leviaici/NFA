@@ -70,25 +70,3 @@ int main() {
     zamfimat.accepts("111001$1"); // It accepts.
     return 0;
 }
-
-
-
-//void accepts (std::string input) {
-//    state = 0;
-//
-//    for (int i = 0; i < input.length(); i++) {
-//        int nextState = exists(state, input[i]);
-//        if (nextState == -1)
-//            return print(false);
-//        state = nextState;
-//    }
-//
-//    if (std::find(finalStates.begin(), finalStates.end(), state) != finalStates.end())
-//        return print(true);
-//    else return print(false);
-//}
-
-
-
-
-
