@@ -18,10 +18,9 @@ public:
 
     std::vector<int> exists (const int &state, const char &sigma) {
         std::vector<int> nextStates;
-        for (auto transition : transitions) {
+        for (auto transition : transitions)
             if (std::get<0>(transition) == state && std::get<1>(transition) == sigma)
                 nextStates.push_back(std::get<2>(transition));
-        }
 
         return nextStates;
     }
