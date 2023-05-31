@@ -1,0 +1,3 @@
+/Users/levismac/CLION/NFA/cmake-build-debug/CMakeFiles/NFA.dir
+/Users/levismac/CLION/NFA/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/levismac/CLION/NFA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
